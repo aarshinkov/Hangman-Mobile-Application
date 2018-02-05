@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Hangman</string>
+    <string name="start_title">Hangman</string>
+    <string name="single_player">Singleplayer</string>
+    <string name="multi_player">Multiplayer</string>
+    <string name="tryItButton">Try it</string>
+    <string name="guessTheSymbol">Type a letter</string>
+    <string name="multiplayer_title">Multiplayer game</string>
+    <string name="play_game">Play</string>
+    <string name="used_letters">Used letters</string>
+    <string name="game_over">Game Over</string>
+    <string name="add_word">Add word</string>
+    <string name="add">Add</string>
+    <string name="you_won">You won the game</string>
+    <string name="back_to_main">Return to main menu</string>
+    <string name="underscore">_</string>
+</resources>

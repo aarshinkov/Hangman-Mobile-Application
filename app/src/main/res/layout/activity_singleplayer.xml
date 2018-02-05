@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    tools:context="com.bulgaria.a_arshinkov.hangman.MainActivity">
+
+    <ImageView
+        android:id="@+id/hangmanImV"
+        android:layout_width="wrap_content"
+        android:layout_height="370dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/hangman_01" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutAddLetter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dirty_gray"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <EditText
+            android:id="@+id/enterLetterET"
+            android:layout_width="112dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:ems="10"
+            android:hint="@string/guessTheSymbol"
+            android:inputType="textPersonName"
+            android:maxLength="1"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/tryButton"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:text="@string/tryItButton"
+            android:layout_marginStart="50dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutLetters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layoutAddLetter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/wrongTypedLettTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hangmanImV"
+        android:layout_centerHorizontal="true"
+        android:background="@color/dirty_gray"
+        android:hint="@string/used_letters"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20sp" />
+
+</RelativeLayout>
